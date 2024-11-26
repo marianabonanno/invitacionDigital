@@ -1,0 +1,669 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.portada {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/boda2.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.frase {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 30px;
+}
+
+
+.contenido {
+    position: relative;
+    margin-top: 100vh; 
+    background-image: url(img/fondo1.png);  
+    background-size:cover ;
+    padding: 40px;
+}
+
+
+
+.countdown-container {
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #c3c9b2;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.countdown-container:hover{
+    transform: scale(1.1);
+}
+
+.countdown-container h1 {
+    color: darkslategray;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 50%;
+    
+}
+
+
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: #eaeaea;
+    border-radius: 8px;
+    width: 80px;
+}
+
+.time-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.time-box p {
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.columns {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    margin: 150px 50px 30px 50px;
+}
+
+.column {
+    background-color: #c3c9b2;
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    padding: 20px 0 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px; 
+    flex-direction: column;
+    margin: 0;
+   
+}
+
+.row h3{
+    padding: 0;
+    margin: 0;
+}
+
+.row p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.row iframe{
+    background-color: #eaeaea;
+    border-style: none;
+    width: 200px;
+    height: 200px; /* Ajusta el tamaño del GIF */
+    border-radius: 50%; /* Opcional: convierte el GIF en un círculo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    border-bottom: solid 2px darkolivegreen ;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: darkolivegreen;
+}
+
+.row:not(:first-child) {
+    /* Filas de texto específicas */
+    justify-content: flex-start; /* Alinea el texto a la izquierda */
+    font-size: 28px;
+    font-weight: normal;  
+    color: darkolivegreen;
+}
+
+
+.div-camara img{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.titulo-fotos{
+    text-align: center;
+    font-size: 40px;
+    margin: 80px 0;
+    color: darkslategray;
+    font-style: italic;
+}
+
+.carousel {
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #c3c9b2;
+}
+
+.carousel-track {
+    padding: 20px 10px;
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.carousel-track img {
+    width: 350px; /* Tamaño de las imágenes */
+    height: auto;
+    margin: 0 10px;
+    border: solid 10px whitesmoke;
+    border-bottom: solid 50px whitesmoke;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.fiesta{
+    justify-content: center;
+    display: flex;
+    margin-top: 200px ;
+    gap: 30px;
+
+}
+
+.fiesta .column1{
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    padding: 10px;
+    border: 3px solid  darkslategray;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.column1:hover{
+    transform: scale(1.1);
+}
+
+.fila{
+    padding: 5px;
+}
+.fila img{
+    width: 50px;
+    height: 50px;
+}
+
+.fila h2{
+    text-align: center;
+    color: antiquewhite;
+    font-size: 50px;
+}
+
+.fila p{
+    text-align: center;
+    color: #444;
+    font-size: 20px ;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.fila a{
+    margin-top: auto;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    appearance: none;
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.fila a:hover{
+    border-color: darkslategray;
+}
+
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    justify-content: center;
+    align-items: center; 
+    z-index: 1000;
+}
+
+.popup-content {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    z-index: 1;
+}
+
+#popup-message {
+    position: relative;
+    z-index: 2; 
+    font-size: 28px;
+    color: #444;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+    z-index: 3;
+    top: 2px;
+    right: 10px;
+}
+
+.popup1 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    justify-content: center;
+    align-items: center; 
+    z-index: 1000;
+}
+
+.regalos{
+    width: 500px;
+    height: 500px;
+    background-color: #c3c9b2; 
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    margin-top: 100px;
+}
+
+.regalos h2{
+    font-size: 40px;
+    color: #444;
+}
+
+.regalos p{
+    font-size: 30px;
+}
+
+.regalos iframe{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-style: none;
+}
+
+.regalos a{
+    margin: auto;
+    width: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    appearance: none;
+    text-decoration: none;
+    color: #444;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.regalos a:hover{
+    border-color: darkslategray;
+}
+
+.popup2 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    justify-content: center;
+    align-items: center; 
+    z-index: 1000;
+}
+
+.despedida{
+    margin: 0;
+    background-image: url(img/carrusel3.jpg) ;
+    background-size:cover ;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-top: -50px;
+ 
+
+}
+
+.despedida h1{
+    position: relative;
+    top: 50%;
+    justify-content: center;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 70px;
+}
+
+
+
+/* General para tablets */
+@media (max-width: 768px) {
+    .info {
+        font-size: 25px;
+    }
+
+    .frase {
+        font-size: 20px;
+    }
+
+    .countdown-container {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .countdown-container h1 {
+        font-size: 35px;
+    }
+
+    .time-box {
+        width: 60px;
+    }
+
+    .time-box span {
+        font-size: 1.5rem;
+    }
+
+    .time-box p {
+        font-size: 0.8rem;
+    }
+
+    .columns {
+        flex-direction: column;
+        margin: 50px 20px 30px 20px;
+    }
+
+    .carousel-track img {
+        width: 250px;
+    }
+
+    .fiesta .column1 {
+        width: 250px;
+        height: 350px;
+    }
+
+    .fila h2 {
+        font-size: 40px;
+    }
+
+    .fila p {
+        font-size: 16px;
+    }
+
+    .fila a {
+        font-size: 14px;
+    }
+
+    .regalos {
+        width: 320px;
+        height: 320px;
+        padding: 40px;
+    }
+
+    .regalos h2 {
+        font-size: 30px;
+    }
+
+    .regalos p {
+        font-size: 20px;
+    }
+
+    .regalos iframe {
+        width: 200px;
+        height: 200px;
+    }
+
+    .regalos a{
+        margin-top: 5px;
+    }
+}
+
+/* General para móviles */
+@media (max-width: 500px) {
+    .info {
+        font-size: 18px;
+    }
+
+    .frase {
+        font-size: 16px;
+    }
+
+
+    .countdown-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        gap: 5px;
+        border-radius: 15px;
+    }
+
+    .countdown-container h1 {
+        font-size: 25px;
+    }
+    
+    
+    .time-box {
+        width: 50px;
+        padding: 6px;
+        border-radius:6px ;
+
+    }
+
+    .time-box span {
+        font-size: 1.2rem;
+    }
+
+    .time-box p {
+        font-size: 0.7rem;
+    }
+
+    .columns {
+        margin: 20px 10px;
+    }
+
+    .row{
+        text-align: center;
+    }
+
+    .carousel-track img {
+        width: 180px;
+    }
+    
+
+    .fiesta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .fiesta .column1 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .fila h2 {
+        font-size: 30px;
+    }
+
+    .fila p {
+        font-size: 16px;
+    }
+
+    .fila a {
+        font-size: 14px;
+    }
+
+    .regalos {
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        padding: 40px;
+     
+    }
+
+    .regalos h2 {
+        font-size: 25px;
+    }
+
+    .regalos p {
+        font-size: 16px;
+    }
+
+    .regalos iframe {
+        width: 150px;
+        height: 150px;
+    }
+
+    .regalos a{
+        margin-top: 5px;
+    }
+
+    .despedida h1 {
+        font-size: 40px;
+    }
+
+    .popup-content{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .popup-content img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 350px;
+        z-index: 1;
+    }
+    
+    #popup-message{
+        position: relative;
+       z-index: 2; 
+      font-size: 16px;
+      color: #444;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .despedida{
+    margin: 0;
+    background-image: url(img/carrusel3.jpg) ;
+    background-size:cover ;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: -28px;
+ 
+    }
+
+}
+
+
